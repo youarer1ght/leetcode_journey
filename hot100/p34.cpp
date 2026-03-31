@@ -1,0 +1,16 @@
+#include <vector>
+#include <algorithm>
+using namespace std;
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        auto low = lower_bound(nums.begin(), nums.end(), target);
+        auto up = upper_bound(nums.begin(), nums.end(), target);
+        if((low == nums.end()) || (*low != target)){
+            return {-1, -1};
+        }
+        int left = low - nums.begin();
+        int right = up - nums.begin() - 1;
+        return {left, right};
+    }
+};

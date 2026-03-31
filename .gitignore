@@ -1,0 +1,21 @@
+# IDE
+.vscode/
+.idea/
+
+# AI
+.claude/
+
+# 编译产物
+*.o
+*.exe
+*.out
+
+# 临时文件
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 个人配置
+*.local
+EOF
