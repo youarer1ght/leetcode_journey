@@ -7,6 +7,7 @@ class Solution {
 public:
     int maxFreq(string s, int maxLetters, int minSize, int maxSize) {
         unordered_map<string, int> re;  // 记录符合条件的 string
+        // 实则只取最短即可，长中含短，所以最长出现在短
         for(int len = minSize; len <= maxSize; len++){
             unordered_map<char, int> count; // 计数 letters
             // init
