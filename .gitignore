@@ -15,6 +15,7 @@
 *.swo
 *~
 .DS_Store
+test.cpp
 
 # 个人配置
 *.local

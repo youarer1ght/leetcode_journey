@@ -20,7 +20,7 @@ public:
         }
         maxP = max(maxP, currP);
         // loop
-        for(int i = k; i < prices.size(); i++){
+        for(long long i = k; i < prices.size(); i++){
             // pop & push
             currP += (long long)prices[i-k] * (strategy[i-k] - 0);
             currP += (long long)prices[i-k/2] * (0 - 1);
