@@ -20,7 +20,7 @@ public:
         long curSum = 0;
         for(int right = 0; right < n; right++){
             curSum += nums[right];
-            while(left < right && curSum > target){
+            while(left <= right && curSum > target){
                 curSum -= nums[left];
                 left++;
             }
